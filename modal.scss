@@ -1,0 +1,74 @@
+
+
+#modal {
+	display: none;
+	
+	&.open {
+		display: block;
+		animation: bounce 300ms ease-in-out 0s 1 normal forwards;
+	
+	&.show {
+		
+		@keyframes bounce {
+		0% {
+			transform: translate(0px, -40px);
+			opacity: 0;
+			} 
+
+
+		100%{
+			transform: translate(0px, 00px);
+			opacity: 1;
+			}
+		}
+	}
+
+	}
+}
+.open {
+	position: fixed;
+	z-index: 9999;
+	background: rgba(0,0,0,0.5);
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+	
+	
+}
+
+.dismiss {
+	color: white;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 36px;
+	text-decoration: none;
+}
+
+.contentBox {
+	width: 600px;
+	margin: 10% auto;
+	background: white;
+	min-height: 600px;
+	animation-duration: 0.5sec;
+	border-radius: 5px;
+}
+
+
+
+.hide {
+		
+		@keyframes bounce {
+		0% {
+			transform: translate(30px, 40px);
+			opacity: 0;
+			} 
+
+
+		100%{
+			transform: translate(0px, 00px);
+			opacity: 1;
+			}
+		}
+	}

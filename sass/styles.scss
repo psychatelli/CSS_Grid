@@ -1,0 +1,205 @@
+@import 'materialize';
+@import 'backgroundColors';
+
+html {
+    font-size: 62.5%; }
+  body {
+    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222; 
+    background: rgb(15, 23, 97);
+}
+
+.material-icons {
+    background-color: rgb(212, 4, 108)
+}
+input {
+    @extend .font_color_2;
+}
+
+nav {
+    background: rgb(35, 21, 228)
+
+}
+.border_rounded {
+    border-radius: 6px;
+}
+
+ .services {
+    @extend .opacity_white_a;
+    padding: 5px;
+    display: grid;
+    grid-column-gap: 1em;
+    /* grid-template-columns: 70% 30%; */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    @extend .border_rounded;
+    margin: 10px auto;
+
+
+    div {
+    // border: solid thin rgb(247, 7, 235);
+    padding: 5px;
+    //@extend .opacity_white_b;
+    background-color: rgb(70, 73, 235)
+
+
+    }
+
+}
+
+.box {
+
+    p::first-letter {
+        @extend .dark_pink_color;
+        font-size: 15;
+    }
+
+   
+}
+
+
+
+.Mywrapper {
+    @extend .opacity_a;
+    padding: 5px;
+    display: grid;
+    /* grid-template-columns: 70% 30%; */
+    grid-template-columns: repeat(4, auto)
+
+}
+.Mywrapper div {
+    background-color: rgb(20, 81, 160) ;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(219, 215, 215);
+
+}
+
+.Mywrapper div:nth-child(odd){
+    background-color: rgb(27, 48, 75) ;
+
+}
+.Mycontainer {
+    @extend .dark_blue;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.row {
+    background-color: rgb(108, 214, 191) ;
+    padding: 5px;
+    margin: 10px; 
+}
+
+
+
+@media (max-width: 700px) {
+    .Mywrapper div {
+        background-color: rgb(211, 212, 211) ;
+    }
+
+    .services  {
+        grid-template-columns: repeat(auto-fit, 100%);
+
+    }
+}
+
+.Button {
+    padding: 5px;
+    border: solid thin rgb(245, 17, 85);
+    background: none;
+    border-radius: 5px;
+    a {
+        color: rgb(245, 17, 85);
+    }
+}
+
+.one_column_auto {
+    display: grid;
+    // grid-template-columns: 100px auto 300px 100px;
+    grid-template-columns: 300px auto;
+   
+    // grid-template-rows: 50px;
+
+    grid-gap: 10px;
+
+    div {
+        @extend .dark_blue;
+        @extend .border_color_pink;
+        padding: 5px;
+
+    }
+
+}
+
+.row_practice {
+    display: grid;
+     // grid-template-rows: repeat(250px);
+    // grid-template-rows: 100px 300px 100px;
+    grid-template-columns: 500px auto; //first column 500, anything else will fill the rest of the space
+    grid-template-rows: 150px 400px; //150 will cover first row, 400 covers second row, the rest is covered with 'grid-auto-rows' 
+    grid-auto-rows: 55px;
+    grid-gap: 10px;
+
+    div {
+        @extend .dark_blue;
+        border: solid thin rgb(4, 59, 243);
+        padding: 5px;
+
+
+    }
+
+}
+
+
+.grid_auto_flow {
+    display: grid;
+    grid-template-columns: 300px auto 200px; //first column 500, anything else will fill the rest of the space
+    grid-auto-flow: column; //means that after you specify the width for all columns, any other element created will be a column
+    grid-auto-columns: 90px ;// This will be the width for any columns being effected by 'grid-auto-flow'
+    grid-gap: 10px;
+
+    div {
+        @extend .dark_blue;
+        border: solid thin rgb(4, 59, 243);
+        padding: 5px;
+
+
+    }
+
+}
+
+.over_flow {
+    display: grid;
+    grid-template-columns: 1fr 3fr; //first column 500, anything else will fill the rest of the space
+    grid-template-rows: 120 300;
+    grid-auto-rows: 100;
+    grid-gap: 10px;
+
+
+    div {
+        @extend .dark_blue;
+        border: solid thin rgb(4, 59, 243);
+        padding: 5px;
+
+
+
+    }
+
+    .box_container {
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        div {
+            height: 20%;
+        }
+    }
+
+
+}
+
+

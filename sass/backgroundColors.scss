@@ -1,0 +1,90 @@
+
+p {
+    color: white;
+}
+
+.font_color_2 {
+    color: rgb(211, 209, 209);
+}
+
+
+.opacity_a {
+    background: rgba(40, 44, 42, 0.8);
+}
+
+.opacity_white_a {
+    background: rgba(121, 122, 122, 0.26);
+}
+
+.opacity_white_b {
+    background: rgba(238, 240, 240, 0.527);
+}
+
+.dark_blue {
+    background: #0F2152;
+}
+.border_blue {
+    border: solid thin #0F2152;
+}
+
+
+.mid_blue {
+    background: #32457E;
+}
+.border_mid_blue {
+    @extend .mid_blue;
+    border: solid thin #32457E;
+}
+
+
+.dark_pink {
+    background: rgb(245, 17, 85);
+}
+.dark_pink_color {
+    color: rgb(245, 17, 85);
+}
+
+
+
+h1, {
+    color: rgb(136, 146, 173);
+}
+
+h2 {
+    color: rgb(166, 173, 192);
+}
+
+h3, h4, h5, h6 {
+    color: rgb(245, 17, 85);
+}
+
+
+.border_color_pink {
+    border: solid thin rgb(245, 17, 85);
+}
+
+.gradient_blue_lightblue {
+ 
+background: rgba(15,33,82,1);
+background: -moz-linear-gradient(left, rgba(15,33,82,1) 0%, rgba(62,73,107,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(15,33,82,1)), color-stop(100%, rgba(62,73,107,1)));
+background: -webkit-linear-gradient(left, rgba(15,33,82,1) 0%, rgba(62,73,107,1) 100%);
+background: -o-linear-gradient(left, rgba(15,33,82,1) 0%, rgba(62,73,107,1) 100%);
+background: -ms-linear-gradient(left, rgba(15,33,82,1) 0%, rgba(62,73,107,1) 100%);
+background: linear-gradient(to right, rgba(15,33,82,1) 0%, rgba(62,73,107,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f2152', endColorstr='#3e496b', GradientType=1 );
+}
+
+
+
+
+.gradient_blue_red {
+    background: rgba(15,33,82,1);
+background: -moz-linear-gradient(-45deg, rgba(15,33,82,1) 0%, rgba(231,56,39,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(15,33,82,1)), color-stop(100%, rgba(231,56,39,1)));
+background: -webkit-linear-gradient(-45deg, rgba(15,33,82,1) 0%, rgba(231,56,39,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(15,33,82,1) 0%, rgba(231,56,39,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(15,33,82,1) 0%, rgba(231,56,39,1) 100%);
+background: linear-gradient(135deg, rgba(15,33,82,1) 0%, rgba(231,56,39,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f2152', endColorstr='#e73827', GradientType=1 );
+}

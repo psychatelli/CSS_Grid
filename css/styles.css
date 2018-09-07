@@ -6449,8 +6449,11 @@ p {
 .font_color_2, input {
   color: #d3d1d1; }
 
-.opacity_a, .Mywrapper {
+.opacity_a, .Mywrapper, .box_9 div {
   background: rgba(40, 44, 42, 0.8); }
+
+.opacity_b {
+  background: rgba(40, 44, 42, 0.473); }
 
 .opacity_white_a, .services {
   background: rgba(121, 122, 122, 0.26); }
@@ -6508,6 +6511,16 @@ h3, h4, h5, h6 {
   background: linear-gradient(135deg, #0f2152 0%, #e73827 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f2152', endColorstr='#e73827', GradientType=1 ); }
 
+.blue_pink_gradient {
+  background: #0f2152;
+  background: -moz-linear-gradient(-45deg, #0f2152 0%, #9d3fb0 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #0f2152), color-stop(100%, #9d3fb0));
+  background: -webkit-linear-gradient(-45deg, #0f2152 0%, #9d3fb0 100%);
+  background: -o-linear-gradient(-45deg, #0f2152 0%, #9d3fb0 100%);
+  background: -ms-linear-gradient(-45deg, #0f2152 0%, #9d3fb0 100%);
+  background: linear-gradient(135deg, #0f2152 0%, #9d3fb0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f2152', endColorstr='#9d3fb0', GradientType=1 ); }
+
 html {
   font-size: 62.5%; }
 
@@ -6519,6 +6532,11 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
   background: #0f1761; }
+
+.page-footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
 
 .material-icons {
   background-color: #d4046c; }
@@ -6623,5 +6641,56 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr; }
     .over_flow .box_container div {
       height: 20%; }
+
+.sizing_grids {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr); }
+  .sizing_grids div {
+    border: solid thin blue;
+    padding: 5px; }
+
+.span_2 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.full_width {
+  grid-column: 1/-1; }
+
+.box_9 {
+  display: grid;
+  grid-template-columns: 300 300;
+  justify-content: space-between; }
+
+.auto_fit_maxs {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  border: solid medium white;
+  padding: 5px; }
+  .auto_fit_maxs div {
+    border: solid thin #f700ff;
+    padding: 5px; }
+
+/*
+justify = is row axis
+align = is column axis
+
+justify-items
+align-items
+
+justify-content
+align-items
+
+justify-self
+align-self
+*/
+.justify_align {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 700px);
+  grid-gap: 10px; }
+  .justify_align div {
+    border: solid thin #f700ff;
+    padding: 5px; }
 
 /*# sourceMappingURL=styles.css.map */

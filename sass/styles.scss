@@ -2,7 +2,9 @@
 @import 'backgroundColors';
 
 html {
-    font-size: 62.5%; }
+    font-size: 62.5%; 
+
+}
   body {
     font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.6;
@@ -10,6 +12,14 @@ html {
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222; 
     background: rgb(15, 23, 97);
+}
+
+
+
+.page-footer {
+position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
 
 .material-icons {
@@ -203,3 +213,76 @@ nav {
 }
 
 
+.sizing_grids {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+
+    div {
+        border: solid thin blue;
+        padding: 5px;
+    }
+
+}
+
+.span_2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.full_width {
+    grid-column: 1/-1;
+}
+.box_9 {
+    display: grid;
+    grid-template-columns: 300 300;
+    justify-content: space-between;
+    div {
+        @extend .opacity_a;
+       
+    }
+}
+
+.auto_fit_maxs {
+    display: grid;
+    grid-gap: 10px;
+    // grid-template-columns: repeat(auto-fill, 200px);
+    // grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr) );
+
+
+    border: solid medium white;
+    padding: 5px;
+
+    div {
+        border: solid thin rgb(247, 0, 255);
+        padding: 5px;
+    }
+}
+
+/*
+justify = is row axis
+align = is column axis
+
+justify-items
+align-items
+
+justify-content
+align-items
+
+justify-self
+align-self
+*/
+
+
+
+.justify_align {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 700px) ;
+    grid-gap: 10px;
+
+    div {
+        border: solid thin rgb(247, 0, 255);
+        padding: 5px;
+    }
+}
